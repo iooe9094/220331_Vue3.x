@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- import Styles CSS -->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <!-- Vue 3.x CDN -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav-bar"></div>
+        <div class="cart">
+            Cart : {{ cart }}
+        </div>
+        <product-display :premium="prem"></product-display>
+    </div>
+    
+    <!-- Import JS -->
+    <script src="./main.js"></script>
+
+    <!-- Import ProductDisplay.js 링크 -->
+    <script src="./ProductDisplay.js"></script>
+
+    <!-- Mount App -->
+    <!-- 2.x : el:'#app'-->
+    <!-- 3.x : app.mount('#app') -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>
